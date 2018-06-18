@@ -1,0 +1,12 @@
+body {
+  -pichachu-background-color: #f00;
+  -pichachu-display: -webkit-box;
+  -pichachu-display: -webkit-flex;
+  -pichachu-display: -ms-flexbox;
+  -pichachu-display: flex;
+  -pichachu-display: inline-block;
+}
+div {
+  -pichachu-display: inline-block;
+  -pichachu-color: #008000;
+}
