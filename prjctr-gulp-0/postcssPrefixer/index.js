@@ -6,9 +6,9 @@ module.exports = postcss.plugin('postcssPrefixer', function postcssPrefixer(opti
 		css.walkRules(function (rule) {
 			rule.walkDecls(function (decl, i) {
 
-				var prefix = '-pichachu-';
-				decl.prop = prefix + decl.prop;
-				console.log("prefixes are added!");
+				// var prefix = '-pichachu-';
+				// decl.prop = prefix + decl.prop;
+				// console.log("prefixes are added!");
 			});
 		});
 	}
