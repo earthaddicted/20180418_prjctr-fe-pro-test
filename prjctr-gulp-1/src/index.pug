@@ -1,5 +1,8 @@
 extends layouts/root
 
+append params
+	pageStyle = 'dark'
+
 block content
 	+header(titleComments)
 	+b-comment(comments)
