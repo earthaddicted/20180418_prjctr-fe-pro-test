@@ -1,3 +1,7 @@
+body {
+  display: block;
+  font-family: 'Lato', sans-serif;
+}
 body .comment {
   display: -webkit-box;
   display: -webkit-flex;
@@ -25,14 +29,20 @@ body .comment__identification span {
 body .comment__identification div:nth-of-type(n+2) {
   margin-left: 10px;
 }
-body .comment__additionals a {
+body .comment__ancor a {
   margin-right: 5px;
   background-color: transparent;
   color: #2199e8;
   text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-body .comment-date {
+body .comment__ancor a:hover {
+  color: #f00;
+}
+body .comment__date {
   font-size: 10px;
   color: #ccc;
 }

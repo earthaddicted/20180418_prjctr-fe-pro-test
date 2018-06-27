@@ -25,14 +25,20 @@
 .comment__identification div:nth-of-type(n+2) {
   margin-left: 10px;
 }
-.comment__additionals a {
+.comment__ancor a {
   margin-right: 5px;
   background-color: transparent;
   color: #2199e8;
   text-decoration: none;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.comment-date {
+.comment__ancor a:hover {
+  color: #f00;
+}
+.comment__date {
   font-size: 10px;
   color: #ccc;
 }
