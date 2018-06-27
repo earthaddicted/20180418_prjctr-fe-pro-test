@@ -1,4 +1,4 @@
-body .comment {
+.comment {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -9,7 +9,7 @@ body .comment {
           align-items: flex-start;
   margin: 20px;
 }
-body .comment__identification {
+.comment__identification {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -19,34 +19,34 @@ body .comment__identification {
       -ms-flex-align: center;
           align-items: center;
 }
-body .comment__identification span {
+.comment__identification span {
   margin-right: 5px;
 }
-body .comment__identification div:nth-of-type(n+2) {
+.comment__identification div:nth-of-type(n+2) {
   margin-left: 10px;
 }
-body .comment__additionals a {
+.comment__additionals a {
   margin-right: 5px;
   background-color: transparent;
   color: #2199e8;
   text-decoration: none;
   cursor: pointer;
 }
-body .comment-date {
+.comment-date {
   font-size: 10px;
   color: #ccc;
 }
-body .comment__user-name {
+.comment__user-name {
   font-size: 14px;
   font-weight: bold;
   color: #add8e6;
 }
-body .comment__user-img {
+.comment__user-img {
   width: 70px;
   height: 70px;
   margin-right: 10px;
 }
-body .comment__user-img img {
+.comment__user-img img {
   max-width: 100%;
   display: block;
 }

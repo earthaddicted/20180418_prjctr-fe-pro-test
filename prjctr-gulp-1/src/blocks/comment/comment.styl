@@ -1,0 +1,52 @@
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px;
+
+    &__identification {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-right: 5px;
+        }
+
+        div:nth-of-type(n+2) {
+            margin-left: 10px;
+        }
+    }
+
+    &__additionals {
+        a {
+            margin-right: 5px;
+            background-color: transparent;
+            color: #2199e8;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+
+    &-date {
+        font-size: 10px;
+        color: #ccc;
+    }
+
+    &__user {
+        &-name {
+            font-size: 14px;
+            font-weight: bold;
+            color: lightblue;
+        }
+
+        &-img {
+            width: 70px;
+            height: 70px;
+            margin-right: 10px;
+
+            img {
+                max-width 100%
+                display: block;
+            }
+        }
+    }
+}
