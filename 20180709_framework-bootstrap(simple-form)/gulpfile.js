@@ -4,7 +4,7 @@ var stylus = require('gulp-stylus');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 
-var moduleBgFix = require('./moduleBgFix/');
+// var moduleBgFix = require('./moduleBgFix/');
 
 var concat = require('gulp-concat');
 var del = require('del');
@@ -15,6 +15,7 @@ var server = browserSync.create();
 var imagemin = require('gulp-imagemin');
 
 var svgSprites = require('gulp-svg-sprites');
+var sass = require('gulp-sass');
 
 
 function reload(done) {
@@ -45,16 +46,21 @@ var stylFiles = [
 var jsFiles = [
   'src/vendor/**/*.js',
   'src/assets/**/*.js',
-  'src/blocks/**/*.js'  
+  'src/blocks/**/*.js'
 ];
 
 var imgFiles = [
   'src/assets/**/*.{jpg,png,jpeg,svg,gif}',
 ];
 
-// var imgSvgFiles = [
-//  'src/assets/**/*.svg'
-// ];
+
+
+gulp.task('sass', function () {
+  return gulp.src('src/vendor/scss/bootstrap.scss')
+    .pipe(sass().on('error', sass.logError))
+    .pipe(gulp.dest('build/assets/'))
+    .pipe(server.stream());
+});
 
 gulp.task('pug', function() {
   return gulp.src(pugFiles)
@@ -100,6 +106,7 @@ gulp.task('svg', function() {
 
 gulp.task('watch', function(){
   gulp.watch('src/**/*.styl', gulp.series('stylus'));
+  gulp.watch('src/**/*.scss', gulp.series('sass'));
   gulp.watch('src/**/*.pug', gulp.series('pug', reload));
   gulp.watch('src/**/*.js', gulp.series('js', reload));
   gulp.watch(imgFiles, gulp.series('img', reload));
@@ -110,7 +117,7 @@ gulp.task('clean', function(){
   return del('./build');
 });
 
-gulp.task('build', gulp.parallel('stylus', 'pug', 'js', 'img', 'svg'));
+gulp.task('build', gulp.parallel('stylus', 'pug', 'js', 'img', 'svg', 'sass'));
 
 gulp.task('serve', gulp.parallel('watch', serve));
 

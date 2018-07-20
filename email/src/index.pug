@@ -3,7 +3,8 @@ doctype strict
 html(xmlns="http://www.w3.org/1999/xhtml")
     head
         meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
-        meta(content="initial-scale=1.0", name="viewport")
+        //- meta(content="initial-scale=1.0", name="viewport")
+        meta(name="viewport", content="width=device-width")
         title Email HW
         style
             :stylus
@@ -110,7 +111,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                         tr
 
                             td
-                                table(width="600px", cellspacing="0", cellpadding="0", border="0", align="center", bgcolor="#d9eda5")
+                                table.container(width="600px", cellspacing="0", cellpadding="0", border="0", align="center", bgcolor="#d9eda5")
                                     //- main green block
                                     tr
                                         td
@@ -147,7 +148,7 @@ html(xmlns="http://www.w3.org/1999/xhtml")
                                     //- footer
                                     tr
                                         td
-                                            table(width="580px", cellspacing="0", cellpadding="0", border="0",align="center", bgcolor="#fff")(style="margin-bottom: 10px")
+                                            table.container(width="580px", cellspacing="0", cellpadding="0", border="0",align="center", bgcolor="#fff")(style="margin-bottom: 10px")
                                                 //- support info
                                                 tr(style="display: block; width: 100%; padding: 30px 20px 30px 30px")
                                                     td(style="width: 400px;")
