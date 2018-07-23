@@ -52,11 +52,21 @@
                   <div class="row">
                     <div class="col-md-5 mb-3">
                       <label for="country">Країна</label>
-                      <select class="custom-select d-block w-100"></select>
+                      <select class="custom-select d-block w-100">
+                        <option value="0">Виберіть</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">Cyprus</option>
+                        <option value="3">England</option>
+                      </select>
                     </div>
                     <div class="col-md-4 mb-3">
                       <label for="region">Область</label>
-                      <select class="custom-select d-block w-100"></select>
+                      <select class="custom-select d-block w-100">
+                        <option value="0">Виберіть</option>
+                        <option value="1">region 1</option>
+                        <option value="2">region 2</option>
+                        <option value="3">region 3</option>
+                      </select>
                     </div>
                     <div class="col-md-3 mb-3">
                       <label for="zip">Регіон</label>
@@ -117,7 +127,19 @@
                   <div class="text-muted">Кошик</div>
                   <div class="badge badge-secondary badge-pill">2</div>
                 </H3>
-                <div class="list-group mb-3">
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                      <h6>product-1
+                      </h6><small class="text-muted">somesmall description</small>
+                    </div><span class="text-muted">12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                      <h6>product-2
+                      </h6><small class="text-muted">somesmall description</small>
+                    </div><span class="text-muted">5</span>
+                  </li>
                   <LI class="list-group-item d-flex justify-content-between bg-light">
                     <div class="text-success">
                       <H6>Промо код</H6>
@@ -129,7 +151,7 @@
                     <SPAN>Всього (&#8372;)</SPAN>
                     <STRONG>(&#8372;) 12</STRONG>
                   </LI>
-                </div>
+                </ul>
                 <form class="card p-2">
                   <div class="input-group">
                     <input class="form-control" type="text" placeholder="Промо код">
