@@ -1,0 +1,15 @@
+include ../globals/data
+include ../../node_modules/bemto.pug/bemto
+include ../blocks/all
+
+
+doctype html
+html
+	head
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato")
+		link(rel="stylesheet" href="/assets/bootstrap.css")
+		link(rel="stylesheet" href="/assets/style.css")
+		title Main test page
+	body
+		block content
+		script(src="/assets/app.js")

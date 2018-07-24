@@ -1,0 +1,29 @@
+include ../../node_modules/bemto.pug/bemto
+include ../blocks/all
+
+- 
+	set_bemto_settings({
+		prefix: '',
+		element: '__',
+		modifier: '_'
+	})
+
+block params
+	- var lang = 'ua'
+
+
+
+if lang == 'ua'
+	include ../globals/dataUa
+else
+	include ../globals/dataEn
+
+doctype html
+html
+	head
+		link(rel="stylesheet" href="/assets/app.css")
+		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat")
+	body
+		block content
+		script(src="/assets/app.js")
+		

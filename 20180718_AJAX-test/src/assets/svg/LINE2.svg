@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="727px" height="237px" viewBox="0 0 727 237" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Stroke 1 Copy 3</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="72.3643141%" y1="58.504492%" x2="15.1600627%" y2="58.5222192%" id="linearGradient-1">
+            <stop stop-color="#28EBFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#28EBFF" offset="16.8600975%"></stop>
+            <stop stop-color="#28EBFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="main-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="desktop" transform="translate(0.000000, -3564.000000)" stroke="url(#linearGradient-1)" stroke-width="3">
+            <g id="4" transform="translate(-179.000000, 2427.000000)">
+                <g id="Group-39" transform="translate(179.000000, 0.000000)">
+                    <polyline id="Stroke-1-Copy-3" points="0 1372.5 149.798796 1295.11092 275.116056 1371.54572 1005 996"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

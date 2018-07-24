@@ -1,0 +1,14 @@
+mixin footer(data)
+
+		+b('footer').footer
+			+e.question= data.question
+			+b.footer-wrapper
+				if data.menu
+					+e('ul').menu
+						each item in data.menu
+							+e.menu-item
+								+e.link(href=item.url)= item.title
+		// +e.answer= data.answer
+		// +b('button').button._transparent
+			// +e('span').__text= data.questionButton
+

@@ -1,0 +1,31 @@
+
+
+mixin b-comment(items, parentIndex, parentUser)
+  each item, index in items 
+  
+    +b.comment
+        +e.user-img
+          img(src=item.userPic)
+          
+        +e.details
+          - currentIndex  = index + 1 +'. '
+          if parentIndex
+            - currentIndex = parentIndex + currentIndex
+            | 
+            
+          +b.comment__identification
+           +e('span').num= currentIndex
+            | 
+           +e.user-name= item.userName
+           +e.date= item.date
+          
+          +e.text!= item.comment
+          
+          +e.additionals
+            +e('span').ancor
+              a(href="#") Reply
+            +e('span').ancor
+              a(href="#") Share
+              
+          if item.children && item.children.length
+            +b-comment(item.children, currentIndex, item.userName)

@@ -1,0 +1,108 @@
+.header
+	background-image: linear-gradient(180deg, #42178c 0%, #413b85 100%)
+	width 100%
+	position absolute
+
+	&__wrapper
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		max-width 1170px
+		margin: auto
+		padding 40px 20px 20px
+
+	&__menu
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+
+	&__item
+		margin 10px 0
+
+	&__logo
+		display block
+		width: 112px
+		height: 84px
+
+	&__link
+		position relative
+		color: #fff;
+		font-size: 24px;
+		font-weight: 700;
+		margin-left 47px
+		transition: .3s ease-in-out
+		padding 10px 0
+
+		&::after
+			bottom 0
+			left 0
+			content: " "
+			width: 30px;
+			height: 3px;
+			position absolute
+			background-color: transparent
+			transition: .3s ease-in-out
+
+		&:hover
+			&::after
+				background-color: #fff
+
+// mob menu settings
+.menu
+	&-decor
+		position: absolute
+		// background-color: #ff7d59
+		display: flex
+		align-items: center
+		cursor: pointer
+		top: 30px
+		left: 30px
+		left: 20px
+		padding: 5px 9px
+
+		&__icon
+		    width: 24px
+		    height: 24px
+		    z-index: 202
+		    padding-top: 4px
+		    -webkit-transition: all linear .2s
+		    transition: all linear .2s
+
+		    border: 1px solid transparent
+
+		&__hamburger
+			display: block
+			position: absolute
+			height: 2px
+			width: 100%
+			-webkit-border-radius: 100px
+			border-radius: 100px
+			background-color: #28ebff
+			opacity: 1
+			left: 0
+			-webkit-transform: rotate(0deg)
+			-ms-transform: rotate(0deg)
+			transform: rotate(0deg)
+			-webkit-transition: .2s ease-in-out
+			transition: .2s ease-in-out
+			
+			&:nth-child(1)
+				display none
+				
+			&:nth-child(2)
+				top 0
+
+		// &:nth-child(1)
+		// 	top: 0
+		// 	display: none
+
+		// &:nth-child(2),
+		// &:nth-child(3)
+		// 	top: 7px
+
+		// &:nth-child(4)
+		// 	top: 10px

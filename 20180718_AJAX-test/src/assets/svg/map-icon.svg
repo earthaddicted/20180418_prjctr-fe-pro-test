@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="62px" viewBox="0 0 53 62" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>map icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#25C8F1" offset="0%"></stop>
+            <stop stop-color="#25C8F1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="81.6752667%" id="linearGradient-2">
+            <stop stop-color="#25C8F1" offset="0%"></stop>
+            <stop stop-color="#25C8F1" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="main-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-21.000000, -6674.000000)" fill-rule="nonzero">
+            <g id="5" transform="translate(-224.000000, 6359.000000)">
+                <g id="contacts" transform="translate(244.000000, 213.000000)">
+                    <g id="map" transform="translate(1.000000, 104.000000)">
+                        <g id="map-icon">
+                            <polygon id="Stroke-1" fill="url(#linearGradient-1)" points="24.7442084 50.3023647 23.2557916 47.6976353 51.2557916 31.6976353 52.7442084 34.3023647"></polygon>
+                            <polygon id="Stroke-3" fill="url(#linearGradient-2)" points="0.73413761 63.308068 -0.73413761 60.691932 23.1503096 47.2870703 46.7145611 60.0541912 45.2854389 62.6919193 23.17584 50.7129297"></polygon>
+                            <path d="M22.4999496,0 L22.4999496,1.5 C5.88512892,1.5 -2.67383455,20.7663554 8.67102009,32.5169187 L22.4999496,46.840414 L36.32888,32.5169178 C47.6738435,20.7662418 39.1151058,1.5 22.4999496,1.5 L22.4999496,0 Z M22.4999496,0 L22.4999496,-1.5 C41.7317826,-1.5 51.6927607,20.9227707 38.4871327,34.6006514 L22.4999496,51.159586 L6.51276744,34.6006523 C-6.69276195,20.9228738 3.26846596,-1.5 22.4999496,-1.5 L22.4999496,0 Z" id="Path" fill="#25C8F1"></path>
+                            <path d="M28.5,20.4997622 C28.5,17.1861462 25.8136834,14.5 22.4997622,14.5 C19.1859611,14.5 16.5,17.1860261 16.5,20.4997622 C16.5,23.8136184 19.1860812,26.5 22.4997622,26.5 C25.8135633,26.5 28.5,23.8134983 28.5,20.4997622 Z M31.5,20.4997622 C31.5,25.4703363 27.4704338,29.5 22.4997622,29.5 C17.5291519,29.5 13.5,25.4703976 13.5,20.4997622 C13.5,15.5291881 17.5290906,11.5 22.4997622,11.5 C27.4704951,11.5 31.5,15.5292494 31.5,20.4997622 Z" id="Stroke-8" fill="#25C8F1"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

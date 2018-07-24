@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="44px" height="65px" viewBox="0 0 44 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>mail icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="main-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-20.000000, -7024.000000)" fill="#25C8F1" fill-rule="nonzero">
+            <g id="5" transform="translate(-224.000000, 6359.000000)">
+                <g id="contacts" transform="translate(244.000000, 213.000000)">
+                    <g id="mail" transform="translate(0.000000, 452.000000)">
+                        <g id="mail-icon">
+                            <path d="M3,59.8522256 L41,38.322401 L41,5.14777437 L3,26.677599 L3,59.8522256 Z M44,40.0707293 L0,65 L0,24.9292707 L44,0 L44,40.0707293 Z" id="Stroke-1"></path>
+                            <polygon id="Stroke-3" points="21.4524187 35.9719703 41.2758475 2.24926847 43.862101 3.76956219 22.548057 40.0280297 0.348235145 27.5603552 1.817253 24.9446361"></polygon>
+                            <polygon id="Stroke-5" points="12.7032392 40.2460693 15.2967608 41.7539307 2.79676078 63.2539307 0.20323922 61.7460693"></polygon>
+                            <polygon id="Stroke-7" points="43.1920291 37.1691748 41.8079709 39.8308252 29.3079709 33.3308252 30.6920291 30.6691748"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

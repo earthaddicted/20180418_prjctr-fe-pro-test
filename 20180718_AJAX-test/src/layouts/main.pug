@@ -1,0 +1,8 @@
+extends root
+
+block content
+	+header({header: globals.header, menu: globals.menu})
+	main.main
+		block main
+
+	+footer(globals.footer)

@@ -1,0 +1,14 @@
+extends main
+
+block main
+
+	block articleParams
+		- var title = 'Article name'
+		- var visualImage = '/assets/i/visual.jpg'
+
+	- var backgroundImage = "background-image: url('" + visualImage + "')"
+	.visual(style=backgroundImage)
+		h1= title
+	section
+		.rich-text
+			block articleContent
