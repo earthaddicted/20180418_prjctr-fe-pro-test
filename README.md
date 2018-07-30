@@ -7,4 +7,4 @@ https://earthaddicted.github.io/20180530_prjctr-fe-pro/email/build/
 
 https://earthaddicted.github.io/20180530_prjctr-fe-pro/20180709_framework-bootstrap(simple-form)/build/
 
-https://earthaddicted.github.io/20180530_prjctr-fe-proAMP/
+https://earthaddicted.github.io/20180530_prjctr-fe-pro/AMP/
