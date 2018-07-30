@@ -2,18 +2,169 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="/assets/bootstrap.css">
+    <link rel="stylesheet" href="assets/bootstrap.css">
     <link rel="stylesheet" href="/assets/style.css">
     <title>Main test page</title>
   </head>
   <body>
     <div class="header">
-      <div class="header__title">lorem ipsum dolor sit amet dsdsdv sdfsdv
+      <div class="header-title">
       </div>
     </div>
-    <div class="form-group">
-      <label class="control-label" for="test-input">test</label>
-      <input class="form-control" id="test-input" type="text">
+    <div class="container">
+      <div class="text-center"><br><br>
+        <H1>Форма замовлення</H1><br><br>
+      </div>
+      <div class="row">
+        <div class="form-group" form="form">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 order-md-1 order-sm-2">
+                <H3>Платіжна адреса</H3><br>
+                <form>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="firstName">Ім'я</label>
+                      <input class="form-control" type="text">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="lastName">Фамілія</label>
+                      <input class="form-control" id="lastName" type="text">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="nickname">Нікнейм</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend"><span class="input-group-text">@</span>
+                      </div>
+                      <input class="form-control" type="text" placeholder="Нікнейм">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email">Пошта(опціонально)</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="info@se7ensky.com">
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="address" placeholder="вул. Воздвиженська, 34А">Адреса</label>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 mb-3">
+                      <label for="country">Країна</label>
+                      <select class="custom-select d-block w-100">
+                        <option value="0">Виберіть</option>
+                        <option value="1">Ukraine</option>
+                        <option value="2">Cyprus</option>
+                        <option value="3">England</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="region">Область</label>
+                      <select class="custom-select d-block w-100">
+                        <option value="0">Виберіть</option>
+                        <option value="1">region 1</option>
+                        <option value="2">region 2</option>
+                        <option value="3">region 3</option>
+                      </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                      <label for="zip">Регіон</label>
+                      <input class="form-control">
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <div class="custom-checkbox custom-control">
+                    <input class="custom-control-input" type="checkbox" id="shipping-address">
+                    <label class="custom-control-label" for="shipping-address">Адреса доставки відповідає моїй платіжній адресі</label>
+                  </div>
+                  <div class="custom-checkbox custom-control">
+                    <input class="custom-control-input" type="checkbox" id="info-template">
+                    <label class="custom-control-label" for="info-template">Збережіть цю інформацію на наступний раз</label>
+                  </div>
+                  <hr class="mb-4">
+                  <H3>Оплата</H3>
+                  <div class="d-block">
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" type="radio" name="payment" id="credit-card">
+                      <label class="custom-control-label" for="credit-card">Кредитна карта</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" type="radio" name="payment" id="debit-card">
+                      <label class="custom-control-label" for="debit-card">Дебетова карта</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                      <input class="custom-control-input" type="radio" name="payment" id="paypal">
+                      <label class="custom-control-label" for="paypal">PayPal</label>
+                    </div>
+                  </div><br>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="cardholder">Ім'я на картці</label>
+                      <input class="form-control" type="text" id="cardholder"><small class="ext-muted">Повне ім'я, як вказано на картці</small>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="сard-number">Номер карти</label>
+                      <input class="form-control" type="text" id="card-number">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-5 mb-3">
+                      <label for="expire">Термін дії</label>
+                      <input class="form-control" type="text" id="expire">
+                    </div>
+                    <div class="col-md-5 mb-3">
+                      <label for="cvv">Номер карти</label>
+                      <input class="form-control" type="password" id="cvv">
+                    </div>
+                  </div>
+                  <hr class="mb-4">
+                  <button class="btn btn-primary btn-lg btn-block" type="submit">Продовжити</button><br><br>
+                </form>
+              </div>
+              <div class="col-md-4 order-md-2 order-sm-1 mb-4">
+                <H3 class="d-flex justify-content-between align-items-center mb-3">
+                  <div class="text-muted">Кошик</div>
+                  <div class="badge badge-secondary badge-pill">2</div>
+                </H3>
+                <ul class="list-group mb-3">
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                      <h6>product-1
+                      </h6><small class="text-muted">somesmall description</small>
+                    </div><span class="text-muted">12</span>
+                  </li>
+                  <li class="list-group-item d-flex justify-content-between lh-condensed">
+                    <div>
+                      <h6>product-2
+                      </h6><small class="text-muted">somesmall description</small>
+                    </div><span class="text-muted">5</span>
+                  </li>
+                  <LI class="list-group-item d-flex justify-content-between bg-light">
+                    <div class="text-success">
+                      <H6>Промо код</H6>
+                      <SMALL>testcode</SMALL>
+                    </div>
+                    <SPAN class="text-success">&#8372; -5</SPAN>
+                  </LI>
+                  <LI class="list-group-item d-flex justify-content-between">
+                    <SPAN>Всього (&#8372;)</SPAN>
+                    <STRONG>(&#8372;) 12</STRONG>
+                  </LI>
+                </ul>
+                <form class="card p-2">
+                  <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Промо код">
+                    <div class="input-group-append">
+                      <button class="btn btn-secondary" type="submit">Примінити</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/assets/app.js"></script>
   </body>

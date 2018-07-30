@@ -1,11 +1,163 @@
 extends layouts/root
 
 block content
-	+header('lorem ipsum dolor sit amet dsdsdv sdfsdv')
+    +header('')
 
-	+b.form-group
-		label.control-label(for='test-input') test
-		input.form-control#test-input(type="text")
+    .container
+        .text-center
+            br
+            br
+            H1 Форма замовлення
+            br
+            br
+
+        .row
+            +b.form-group('form')
+                +b.container
+                    .row
+                        //- left side
+                        .col-md-8.order-md-1.order-sm-2
+                            H3 Платіжна адреса
+                            br
+
+                            +b('form')
+                                .row
+                                    //- first name
+                                    .col-md-6.mb-3
+                                        label(for='firstName') Ім'я
+                                        input.form-control(type='text')
+
+                                    //- last name
+                                    .col-md-6.mb-3
+                                        label(for='lastName') Фамілія
+                                        input.form-control#lastName(type='text')
+
+                                .mb-3
+                                    label(for='nickname') Нікнейм
+
+                                    +b.input-group
+                                        +e.prepend
+                                            +e('span').text @
+                                            
+                                        input.form-control(type='text' placeholder='Нікнейм')
+
+                                .mb-3
+                                    label(for='email') Пошта(опціонально)
+
+                                    +b.input-group
+                                        input.form-control(type='text' placeholder='info@se7ensky.com')
+
+                                .mb-3
+                                    label(for='address' placeholder="вул. Воздвиженська, 34А") Адреса
+
+                                .row
+                                    .col-md-5.mb-3
+                                        label(for='country') Країна
+                                        select.custom-select.d-block.w-100
+                                            each item, i in globals.countries
+                                                option(value=i)= item
+
+                                    .col-md-4.mb-3
+                                        label(for='region') Область
+                                        select.custom-select.d-block.w-100
+                                            each item, i in globals.regions
+                                                option(value=i)= item
+
+                                    .col-md-3.mb-3
+                                        label(for='zip') Регіон
+                                        input.form-control
+
+                                hr.mb-4
+
+                                .custom-checkbox.custom-control
+                                    input(type="checkbox")#shipping-address.custom-control-input
+                                    label(for="shipping-address").custom-control-label Адреса доставки відповідає моїй платіжній адресі
+
+                                .custom-checkbox.custom-control
+                                    input(type="checkbox")#info-template.custom-control-input
+                                    label(for="info-template").custom-control-label Збережіть цю інформацію на наступний раз
+
+                                hr.mb-4
+
+                                H3 Оплата
+
+                                +b.d-block
+                                    +b.custom-control.custom-radio
+                                        input(type='radio' name ='payment')#credit-card.custom-control-input
+                                        label(for='credit-card').custom-control-label Кредитна карта
+
+                                    +b.custom-control.custom-radio
+                                        input(type='radio' name ='payment')#debit-card.custom-control-input
+                                        label(for='debit-card').custom-control-label Дебетова карта
+
+                                    +b.custom-control.custom-radio
+                                        input(type='radio' name ='payment')#paypal.custom-control-input
+                                        label(for='paypal').custom-control-label PayPal
+
+                                br
+
+                                +b.row
+                                    .col-md-6.mb-3
+                                        label(for='cardholder') Ім'я на картці
+                                        input(type='text')#cardholder.form-control
+                                        small.ext-muted Повне ім'я, як вказано на картці
+
+                                    .col-md-6.mb-3
+                                        label(for='сard-number') Номер карти
+                                        input(type='text')#card-number.form-control
+
+                                +b.row
+                                    .col-md-5.mb-3
+                                        label(for='expire') Термін дії
+                                        input(type='text')#expire.form-control
+
+                                    .col-md-5.mb-3
+                                        label(for='cvv') Номер карти
+                                        input(type='password')#cvv.form-control
+
+                                hr.mb-4
+
+                                button(type='submit').btn.btn-primary.btn-lg.btn-block Продовжити
+                                br
+                                br
+
+                        //- right side
+                        .col-md-4.order-md-2.order-sm-1.mb-4
+                            H3.d-flex.justify-content-between.align-items-center.mb-3
+                                .text-muted Кошик
+                                .badge.badge-secondary.badge-pill 2
+
+                            +b('ul').list-group.mb-3
+                                //- each item, i in globals.cart
+                                //-         ('li')= item
+                                for item, i in cart
+                                    +b('li').list-group-item.d-flex.justify-content-between.lh-condensed
+                                        div
+                                            +b('h6')= item.productName
+                                            +b('small').text-muted= item.productDescription
+
+                                        +b('span').text-muted= item.productPrice
+
+                                LI.list-group-item.d-flex.justify-content-between.bg-light
+                                    .text-success
+                                        H6 Промо код
+                                        SMALL testcode
+
+                                    SPAN.text-success &#8372; -5
+
+                                LI.list-group-item.d-flex.justify-content-between
+                                    SPAN Всього (&#8372;)
+                                    STRONG (&#8372;) 12
+
+                            +b('form').card.p-2
+                                +b.input-group
+                                    input(type='text' placeholder='Промо код').form-control
+
+                                    .input-group-append
+                                        button(type='submit').btn.btn-secondary Примінити
+
+
+
 
 
 

@@ -1,13 +1,21 @@
-include ../globals/data
+include ../globals/data.pug
 include ../../node_modules/bemto.pug/bemto
 include ../blocks/all
+- 
+	set_bemto_settings({
+		prefix: '',
+		element: '-',
+		modifier: '-'
+	})
+
+
 
 
 doctype html
 html
 	head
 		link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato")
-		link(rel="stylesheet" href="/assets/bootstrap.css")
+		link(rel="stylesheet" href="assets/bootstrap.css")
 		link(rel="stylesheet" href="/assets/style.css")
 		title Main test page
 	body

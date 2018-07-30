@@ -4,7 +4,7 @@ var stylus = require('gulp-stylus');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 
-var moduleBgFix = require('./moduleBgFix/');
+// var moduleBgFix = require('./moduleBgFix/');
 
 var concat = require('gulp-concat');
 var del = require('del');
