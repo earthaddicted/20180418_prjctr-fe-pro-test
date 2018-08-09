@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CNVS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <body>
+        <canvas id="canvas" style="width: 800px; height: 800px; background: black; cursor: url(stars.png), auto;">
+            
+        </canvas>
+        <script>
+
+            var canvas, ctx;
+            canvas = document.getElementById("canvas");
+            canvas.width = 800;
+            canvas.height = 800;
+            ctx = canvas.getContext('2d');
+
+            
+
+              var img = new Image();
+              img.onload = function() {
+                ctx.drawImage(img, x, y/2);
+              };
+
+              var clear = function() {
+                    ctx.clearRect(0, 0, canvas.height, canvas.width);
+                    dx = 0;
+                    dy = 0;
+              }
+
+
+              var dx = 0, dy = 0;
+
+            var draw = function() {
+                dx = img.width * 0.01;
+                dy= img.height * 0.01;
+                var x = (canvas.width - img.width)/2;
+                var y = (canvas.height - img.height)/2;
+
+                ctx.drawImage(img, x, y, width, height);
+                requestAnimationFrame(draw);
+
+                if(dx > canvas.width) {
+                    clear();
+                }
+            }
+
+
+            img.onload = function() {
+                requestAnimationFrame(draw);
+            }
+
+            // for animation use pilyfill
+   
+
+           img.src = 'stars.png'; // Set source path
+
+
+
+
+        </script>
+    </body>
+</html>

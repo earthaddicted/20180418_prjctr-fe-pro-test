@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CNVS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <body>
+        <canvas id="canvas" style="width: 800px; height: 800px; background: black; cursor: url(brush.png), auto;"></canvas>
+        <script>
+
+            var canvas, ctx;
+            canvas = document.getElementById("canvas");
+            canvas.width = 800;
+            canvas.height = 800;
+            ctx = canvas.getContext('2d');
+
+            var img = new Image();
+            img.src = 'brush.png';
+
+
+            var allowDraw = false;
+            var lastPoint;
+
+
+            var distanceBetween = function(point1, point2) {
+              return Math.sqrt(Math.pow(point2.x - point1.x, 2) + Math.pow(point2.y - point1.y, 2));
+            };
+
+            var angleBetween = function(point1, point2) {
+              return Math.atan2(point2.x - point1.x, point2.y - point1.y);
+            };
+
+            canvas.onmousemove = function(event){
+              if (allowDraw) {
+
+                 var currentPoint = {
+                  x: event.clientX - canvas.getBoundingClientRect().left,
+                  y: event.clientY - canvas.getBoundingClientRect().top
+                };
+
+                if (lastPoint != null) {
+                  dist = distanceBetween(lastPoint, currentPoint);
+                  angle = angleBetween(lastPoint, currentPoint);
+                  i = 0;
+                  while (i < dist) {
+                    x = lastPoint.x + Math.sin(angle) * i;
+                    y = lastPoint.y + Math.cos(angle) * i;
+                    ctx.drawImage(img, x, y);
+                    i++;
+                  }
+                }
+
+                lastPoint = currentPoint;
+
+              }
+            }
+
+            canvas.onmousedown = function(){
+              allowDraw = true;
+            }
+            canvas.onmouseup = function(){
+              allowDraw = false;
+              lastPoint = null;
+            }
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
